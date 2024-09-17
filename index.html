@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>لیست وظایف</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>لیست وظایف</h1>
     <div class="wrapper">
       <form>
         <input
+          class="todo_input"
           type="text"
           placeholder="هر چی دوست داری بنویس  و اضافه کن"
           autocomplete="off"
@@ -20,15 +23,31 @@
           <input type="checkbox" id="todo_1" />
           <label for="todo_1" class="custom_checkbox">
             <svg
+              fill="transparent"
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              fill="#e8eaed"
+              fill="#000000"
             >
               <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
             </svg>
           </label>
+          <label for="todo_1" class="todo_text"> انجام پروژه های تمرینی </label>
+          <button class="delete_button">
+            <svg
+              fill="var(--secondary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M261-120q-24.75 0-42.37-17.63Q201-155.25 201-180v-570h-41v-60h188v-30h264v30h188v60h-41v570q0 24-18 42t-42 18H261Zm438-630H261v570h438v-570ZM367-266h60v-399h-60v399Zm166 0h60v-399h-60v399ZM261-750v570-570Z"
+              />
+            </svg>
+          </button>
         </li>
       </ul>
     </div>
